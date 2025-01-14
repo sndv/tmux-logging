@@ -18,7 +18,7 @@ stop_pipe_pane() {
 }
 
 target_pane() {
-	tmux display-message -p "#{session_name}:#{window_index}.#{pane_index}"
+	tmux display-message -p "#{pane_id}"
 }
 
 # save logging status in a pane variable
